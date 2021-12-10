@@ -7,7 +7,19 @@ class Anagramizer
     elsif word1_compare == word2_compare
       "Those words are anagrams!"
     else
-      "Those words are not anagrams ):"
+      antigram = true
+      word1_compare.each do |word1_element|
+        word2_compare.each do |word2_element|
+          if word1_element == word2_element
+            antigram = false
+          end
+        end
+      end
+      if antigram
+        "Those words are antigrams O:"
+      else
+        "Those words are not anagrams ):"
+      end
     end
   end
 

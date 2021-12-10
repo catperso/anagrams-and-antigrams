@@ -22,4 +22,8 @@ describe('Anagramizer#anagram') do
     expect(auntie_gram.anagram("Phblthp", "Phtlbhp")).to(eq("I don't think those are real words D:"))
   end
 
+  it('will check if non-anagram words are actually antigrams') do
+    auntie_gram = Anagramizer.new
+    expect(auntie_gram.anagram("horrible", "cat")).to(eq("Those words are antigrams O:"))
+  end
 end
