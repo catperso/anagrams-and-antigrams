@@ -9,7 +9,7 @@ describe('Anagramizer#anagram') do
 
   it('will tell you if two words are not anagrams') do
     auntie_gram = Anagramizer.new
-    expect(auntie_gram.anagram("crying", "phlegm")).to(eq("Those words are not anagrams ):"))
+    expect(auntie_gram.anagram("crying", "phlegm")).to(eq("Those words are not anagrams, but they have 1 letter in common: g"))
   end
 
   it('will tell you if the words are anagrams regardless of case') do

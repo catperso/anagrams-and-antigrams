@@ -18,7 +18,17 @@ class Anagramizer
       if antigram
         "Those words are antigrams O:"
       else
-        "Those words are not anagrams ):"
+        shared_letters = []
+        word1_compare.each do |word1_element|
+          if word2_compare.include? word1_element
+            shared_letters.push(word1_element)
+          end
+        end
+        letter = "letters"
+        if shared_letters.length == 1
+          letter = "letter"
+        end
+        "Those words are not anagrams, but they have #{shared_letters.length} #{letter} in common: #{shared_letters.join(' ')}"
       end
     end
   end
