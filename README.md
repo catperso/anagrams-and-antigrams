@@ -29,3 +29,12 @@ _A simple command line app that takes two strings and tells you whether or not t
 * _Run_ `docker-compose up` _if you want to run the specs for /lib/anagrams.rb._
 * _Run_ `docker-compose run --rm app ruby anagrams_script.rb` _to run the app!_
 
+## Known Bugs
+
+_None so far._
+
+## License - [MIT](https://opensource.org/licenses/MIT)
+
+_If you run into any problems/bugs feel free to send me an email [Matt C.](mailto:mc.casperson@gmail.com) with details._
+
+Copyright (c) _2021_ _Matt C._
