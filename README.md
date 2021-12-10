@@ -35,6 +35,6 @@ _None so far._
 
 ## License - [MIT](https://opensource.org/licenses/MIT)
 
-_If you run into any problems/bugs feel free to send me an email [Matt C.](mailto:mc.casperson@gmail.com) with details._
+_If you run into any problems/bugs feel free to send me an email [(mc.casperson@gmail.com)](mailto:mc.casperson@gmail.com) with details._
 
 Copyright (c) _2021_ _Matt C._
