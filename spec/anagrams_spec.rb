@@ -26,4 +26,9 @@ describe('Anagramizer#anagram') do
     auntie_gram = Anagramizer.new
     expect(auntie_gram.anagram("horrible", "cat")).to(eq("Those words are antigrams O:"))
   end
+
+  it('will work for sentences as well as words, regardless of punctuation') do
+    auntie_gram = Anagramizer.new
+    expect(auntie_gram.anagram("The Morse Code", "Here come dots!")).to(eq("Those words are anagrams!"))
+  end
 end
