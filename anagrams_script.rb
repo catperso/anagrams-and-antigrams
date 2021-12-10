@@ -29,6 +29,7 @@ until (do_it_again == "n")
   puts "Please enter the second word/phrase to compare:"
   word2 = gets.chomp
   puts auntie_gram.anagram(word1, word2)
+  puts auntie_gram.palindrome(word1, word2)
   puts "Would you like to do it again? (Y/N only please):"
   until (do_it_again.match(/[yn]/i))
     do_it_again = gets.chomp.downcase
