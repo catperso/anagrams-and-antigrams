@@ -4,6 +4,8 @@ class Anagramizer
     word2_compare = word2.downcase.split('').sort.delete_if{|x| x.match(/[^a-z]/i)}
     if (word1_compare.none? {|e| e.match(/[aeiou]/i)}) || (word2_compare.none? {|e| e.match(/[aeiou]/i)})
       "I don't think those are real words D:"
+    elsif word1.downcase.split('').delete_if{|x| x.match(/[^a-z]/i)} == word2.downcase.split('').delete_if{|x| x.match(/[^a-z]/i)}
+      "Hey, those are the same words!"
     elsif word1_compare == word2_compare
       "Those words are anagrams!"
     else
@@ -24,6 +26,7 @@ class Anagramizer
             shared_letters.push(word1_element)
           end
         end
+        shared_letters = shared_letters.uniq
         letter = "letters"
         if shared_letters.length == 1
           letter = "letter"

@@ -31,6 +31,11 @@ describe('Anagramizer#anagram') do
     auntie_gram = Anagramizer.new
     expect(auntie_gram.anagram("The Morse Code", "Here come dots!")).to(eq("Those words are anagrams!"))
   end
+
+  it('will tell the user if both words/phrases entered are the same, regardless of case or punctuation') do
+    auntie_gram = Anagramizer.new
+    expect(auntie_gram.anagram("pingas?", "PINGAS!!!")).to(eq("Hey, those are the same words!"))
+  end
 end
 
 describe('Anagramizer#palindrome') do
